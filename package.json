@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "nodemon --exec \"npm run start\"",
     "format": "prettier --write 'src/**/*.{js,ts}'",
-    "start": "npm run build && node -r dotenv/config build/server.js",
+    "start": "npm run build && node -r dotenv/config build/src/server.js",
     "build": "rimraf ./build && tsc && ./scripts/post-build.sh"
   },
   "dependencies": {

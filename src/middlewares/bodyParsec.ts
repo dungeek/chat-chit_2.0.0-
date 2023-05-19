@@ -1,11 +1,11 @@
 import bodyParser from 'body-parser';
 
-const parsec = (app: any) => {
-    app.use
+const parser = (app: any) => {
+    app.use;
+    app.use(bodyParser.json())
     bodyParser.urlencoded({
-      extended: true
-    }
-  )
-}
+        extended: false,
+    });
+};
 
-export default parsec;
+export default parser;
